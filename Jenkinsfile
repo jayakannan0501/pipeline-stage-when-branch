@@ -17,7 +17,7 @@ pipeline {
                 echo 'Building dev'
             }
         }
-        stage('Build Dev') {
+        stage('Build Uat') {
             when {
                 branch 'uat'
             }
