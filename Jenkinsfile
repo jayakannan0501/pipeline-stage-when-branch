@@ -17,5 +17,13 @@ pipeline {
                 echo 'Building dev'
             }
         }
+        stage('Build Dev') {
+            when {
+                branch 'uat'
+            }
+            steps {
+                echo 'deploying the uat jobs'
+            }
+        }
     }
 }
